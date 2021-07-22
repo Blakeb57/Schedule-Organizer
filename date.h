@@ -7,9 +7,20 @@
 class bad_day
 {
     public:
-		bad_day(){monthnum = daynum = 0;}
-		bad_day(int m, int d){monthnum = m, daynum = d;}
-		void msg(){std::cerr << monthnum << " has no day " << daynum << std::endl;}
+		bad_day()
+		{
+			monthnum = daynum = 0;
+		}
+
+		bad_day(int m, int d)
+		{
+			monthnum = m, daynum = d;
+		}
+
+		void msg()
+		{
+			std::cerr << monthnum << " has no day " << daynum << std::endl;
+		}
 
     private:
 		int monthnum, daynum;
@@ -19,9 +30,20 @@ class bad_day
 class bad_month
 {
     public:
-		bad_month(){monthnum = 0;}
-		bad_month(int m){monthnum = m;}
-		void msg(){std::cerr << monthnum << " is an invalid month number.\n";}
+		bad_month()
+		{
+			monthnum = 0;
+		}
+
+		bad_month(int m)
+		{
+			monthnum = m;
+		}
+
+		void msg()
+		{
+			std::cerr << monthnum << " is an invalid month number.\n";
+		}
 
     private:
 		int monthnum;
@@ -62,5 +84,4 @@ class Date
 		int year;
 		int daysallowed[13];
 };
-
 #endif
