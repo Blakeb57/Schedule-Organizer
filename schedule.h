@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <vector>
 #include "date.h"
+using namespace std;
 
 #ifndef SCHEDULE
 #define SCHEDULE
